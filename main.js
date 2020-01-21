@@ -1,25 +1,49 @@
-function myFunction()
+function myFunction1()
 {
-    var string_length=prompt("Enter the characters required in the password");
-    var num=prompt("Enter the numbers required in the password");
-    var spcl=prompt("Enter the numbers required in the password");
+   
    
     var randomstring = "";
-    for (var i=0; i<string_length; i++) {
-        var rnum = Math.floor((Math.random() * 26)+65);
+    for (var i=0; i<20; i++) {
+        var rnum = Math.floor((Math.random() *90 )+33);
         randomstring += String.fromCharCode(rnum);
     }
    
-    for (var i=0;i<spcl; i++) {
-        var rnum = Math.floor((Math.random() * 8)+41);
-        randomstring += String.fromCharCode(rnum);
-    }
-    for (var i=0;i<num; i++) {
-      var rnum = Math.floor(Math.random() *9);
-      randomstring += rnum;
-  }
+  
     document.getElementById("demo").innerHTML= randomstring;
     
     
 }
+
+function myFunction2()
+{
+   
+   
+    var randomstring = "";
+    for (var i=0; i<15; i++) {
+        var rnum = Math.floor((Math.random() *90 )+33);
+        randomstring += String.fromCharCode(rnum);
+    }
+   
+  
+    document.getElementById("demo").innerHTML= randomstring;
+    
+    
+}
+function myFunction3()
+{
+   
+   
+    var randomstring = "";
+    for (var i=0; i<8; i++) {
+        var rnum = Math.floor((Math.random() *90 )+33);
+        randomstring += String.fromCharCode(rnum);
+    }
+   
+  
+    document.getElementById("demo").innerHTML= randomstring;
+    
+    
+}
+
+
 
